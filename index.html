@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relief image</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800 font-sans p-6">
+    <!-- 1-Header section start -->
+<header class="relative h-screen bg-cover bg-center bg-no-repeat" style="background-image: url('./images/Showcase.png');">
+  <div class="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
+  <div class="sticky top-0  left-0 z-999 bg-transparent backdrop-blur-sm opacity-75" style="background-image: url('./images/Showcase.png'); ">
+    <div class="flex justify-between items-center px-6 py-4 text-white">
+
+      <div class="space-x-6 hidden md:flex gap-[40px] ">
+        <a href="#" class="hover:underline">О Компании</a>
+        <a href="#" class="hover:underline">Проекты</a>
+        <a href="#" class="hover:underline">Уход за садом</a>
+        <a href="#" class="hover:underline">Ландшафт</a>
+        <a href="#" class="hover:underline">Отзывы</a>
+      </div>
+
+      <!-- Right: Contact Info -->
+      <div class="text-right text-sm space-y-1 hidden md:block">
+        <p>
+          <img src="./images/telefon.svg" class="inline w-4 h-4 mr-1" alt="Телефон">
+          тел. +7 (981) 98-50-04
+        </p>
+        <p>
+          <img src="./images/location.svg" class="inline w-4 h-4 mr-1" alt="Локация">
+          Санкт-Петербург и ЛО
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <div class="relative z-10 flex flex-col items-start justify-center h-full px-6 md:px-16" data-aos="fade-up">
+
+    <!-- Logo -->
+    <img src="./images/logotip.svg" alt="Relief Logo" class="w-[267px] h-[204px]">
+
+    <!-- Title -->
+    <h1 class="font-['Merriweather',sans-serif] font-light text-[36px] leading-tight tracking-wide text-white [font-variant:small-caps] [text-shadow:0_7px_4px_rgba(0,0,0,0.4)] mix-blend-screen">
+      Благоустройство<br>и озеленение участков
+    </h1>
+
+    <!-- Button -->
+    <button class="mt-6 border-2 border-[#ff7e35] rounded-[5px] w-[280px] md:w-[339px] h-[60px] bg-[rgba(255,126,53,0.53)] text-[#ffdf9e] text-[20px] md:text-[24px] font-light shadow-[0_4px_20px_0_rgba(0,0,0,0.25),inset_9px_9px_10px_0_rgba(0,0,0,0.25)] [text-shadow:0_7px_4px_rgba(0,0,0,0.25)] hover:scale-105 transition">
+      Оставить заявку
+    </button>
+  </div>
+  <div class="absolute top-1/2 right-3 transform -translate-y-1/2 flex flex-col space-y-4 z-50" data-aos="fade-left">
+    <a href="#" class="p-2 rounded-full hover:scale-110 transition">
+      <img src="./images/instagram.svg" class="w-[36px] h-[36px]" alt="Instagram">
+    </a>
+    <a href="#" class="p-2 rounded-full hover:scale-110 transition">
+      <img src="./images/watsapt.svg" class="w-[36px] h-[36px]" alt="WhatsApp">
+    </a>
+    <a href="#" class="p-2 rounded-full hover:scale-110 transition">
+      <img src="./images/email.svg" class="w-[36px] h-[36px]" alt="Email">
+    </a>
+  </div>
+</header>
+    <!-- 1-Header section end -->
+
+    <!-- 2-Showcase section start -->
+  <section class="w-[90%] max-w-[1300px] mx-auto my-16" data-aos="fade-up">
+    <div class="bg-[#5a554d] text-[#ffdf9e] p-6 rounded-lg shadow-md">
+      <h2 class="text-lg font-semibold mb-4">О КОМПАНИИ</h2>
+      <p class="text-sm leading-relaxed">
+        <strong>Relief Image</strong> - компания по уходу за садом и ландшафтом. Более 10 лет мы занимаемся благоустройством загородных участков, также имеем порядка 60 готовых работ в Ленинградской области и Санкт-Петербурге. <br><br>
+        К нам обращаются и доверяют уже более 20 постоянных клиентов за помощью по благоустройству и уходу участков. Наша компания отличается КАЧЕСТВОМ выполненных работ, ГАРАНТИЕЙ на растения, ЛУЧШИМИ питомниками для вашего участка и разработкой проекта ПОД КЛЮЧ. <br><br>
+        Обратившись к нашим специалистам, вы всегда будете чувствовать, как мы с большим вниманием относимся к вашим предпочтениям. Одной из ключевых задач нашей компании является то, что бы клиент всегда оставался доволен и наслаждался выполненной работой. Если вас интересовали именно эти критерии при подборе специалистов, то вы попали в нужные руки!
+      </p>
+    </div>
+  </section>
+
+  <section class="w-[90%] max-w-[1300px] mx-auto my-12" data-aos="fade-up" data-aos-delay="100">
+    <img src="./images/hero.svg" alt="НАШИ ПРОЕКТЫ" class="w-[1600px]">
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Project 1 -->
+      <div class="rounded overflow-hidden shadow-lg">
+        <img src="./images/hero1.svg" alt="Правдинское" class="w-full h-[600px] object-cover">
+        <div class="text-center py-2 text-sm">Правдинское</div>
+      </div>
+      <!-- Project 2  -->
+      <div class="grid grid-cols-1 gap-6">
+        <!-- Верхняя картинка -->
+        <div class="rounded overflow-hidden shadow-lg">
+          <img src="./images/hero2.svg" alt="Репино" class="w-full h-[270px] object-cover">
+          <div class="text-center py-2 text-sm ">Репино</div>
+        </div>
+        <div class="rounded overflow-hidden shadow-lg">
+          <img src="./images/hero3.svg" alt="Петергоф" class="w-full h-[270px] object-cover">
+          <div class=" text-center py-2 text-sm">Петергоф</div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- 2-Showcase section end -->
+
+    <!-- 3-Hero section start -->
+     <section class="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center"
+         style="background-image: url('./images/hero4.svg');">
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  <div class="relative z-10 w-[90%] max-w-[1200px] text-white px-4 py-12" data-aos="fade-up">
+    <img src="./images/uxod .svg">
+    <p class="max-w-3xl text-sm md:text-base mb-10 leading-relaxed">
+      Каждый участок требует постоянный профессиональный уход, чтобы поддерживать ту красоту, которую планировал ландшафтный дизайнер. Это подразумевает большой комплекс работ, требующих много времени. Доверьтесь нашим опытным садоводам! И мы гарантируем качество работ, здоровый сад, а самое главное — ваше сэкономленное время.
+    </p>
+    <div class="bg-white text-black rounded-lg shadow-lg grid grid-cols-1 md:grid-cols-2 gap-6 p-6 md:p-10" data-aos="fade-up" data-aos-delay="200">
+  
+      <div class="flex flex-col space-y-4">
+        <button class="border border-gray-300 rounded px-4 py-2 hover:bg-gray-100 transition">СЕЗОННЫЕ ВЫЕЗДЫ</button>
+        <button class="border border-gray-300 rounded px-4 py-2 hover:bg-gray-100 transition">ОСЕНЬ</button>
+        <button class="border border-gray-300 rounded px-4 py-2 hover:bg-gray-100 transition">ВЕСНА</button>
+        <button class="bg-orange-100 border-l-4 border-orange-500 text-orange-500 rounded px-4 py-2 font-semibold shadow-md">ЛЕТО</button>
+      </div>
+      <ul class="list-disc list-inside text-sm md:text-base space-y-2">
+        <li>Уход за цветниками (прополка, обрезка сухого, рыхление)</li>
+        <li>Формовочная обрезка (фигурная стрижка, стрижка изгородей, производится по мере роста)</li>
+        <li>Стрижка газона</li>
+        <li>Обработка газона от сорняков (первая обработка производится после первого коса газона)</li>
+        <li>Внесение удобрений (по газону производится 1 раз в 2 недели, по цветникам в зависимости от растений)</li>
+        <li>Обработка от вредителей и болезней (производится с интервалом в 10-14 дней)</li>
+        <li>Обработка мощения от сорняков (производится 1 раз в месяц)</li>
+      </ul>
+    </div>
+
+    <!-- Footer Note -->
+    <div class="mt-4 text-xs text-gray-200 space-y-1" data-aos="fade-up" data-aos-delay="400">
+      <p>*Выезд и консультация специалиста оплачивается отдельно.</p>
+      <p>*Отдельно оплачивается: вывоз мусора, химия, удобрение, материалы для дополнительных работ (например: земля, мульча, бордюрная лента и т.д.)</p>
+    </div>
+  </div>
+</section>
+    <!-- 3-Hero section end -->
+
+    <!-- 4-Cards section start -->
+    <section class="py-12">
+    <div class="max-w-[1300px] w-[90%] mx-auto">
+        <img src="./images/ЛАНДШАФТ.svg" class="w-full max-w-[1600px] h-[45px] mx-auto mb-8" alt="ЛАНДШАФТ" data-aos="fade-down" data-aos-duration="800" />
+        <div class="bg-[#5a554d] text-[#ffdf9e] p-4 rounded mb-12" data-aos="fade-up" data-aos-duration="1000">
+        <p class="text-sm sm:text-base leading-relaxed">
+            Ландшафтный дизайн помогает обеспечить красивый вид вокруг вашего дома. Ведь участок должен выглядеть эстетично, иметь логическую структуру и радовать глаз. Чтобы избежать лишних разочарований, необходимо грамотно продумать и разработать дизайн-проект. Обладая теоретическими знаниями и практическим опытом, мы воплотим в реальность все ваши пожелания.
+        </p>
+        </div>
+        <!-- Cards Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div data-aos="zoom-in" data-aos-duration="700">
+            <img src="./images/card1.svg" alt="Проектирование" class="w-full h-48 object-cover rounded shadow" />
+            <p class="mt-2 font-semibold text-sm sm:text-base">1. Ландшафтное проектирование участка</p>
+        </div>
+        <!-- Card 2 -->
+        <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+            <img src="./images/card2.svg" alt="Подготовка участка" class="w-full h-48 object-cover rounded shadow" />
+            <p class="mt-2 font-semibold text-sm sm:text-base">2. Подготовка участка</p>
+        </div>
+        <!-- Card 3 -->
+        <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="200">
+            <img src="./images/card3.svg" alt="Дренажная система" class="w-full h-48 object-cover rounded shadow" />
+            <p class="mt-2 font-semibold text-sm sm:text-base">3. Создание дренажной системы</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div data-aos="zoom-in" data-aos-duration="700">
+            <img src="./images/card4.svg" alt="Дорожное покрытие" class="w-full h-48 object-cover rounded shadow" />
+            <p class="mt-2 font-semibold text-sm sm:text-base">4. Устройство дорожного покрытия</p>
+        </div>
+
+        <!-- Card 5 -->
+        <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+            <img src="./images/card5.svg" alt="Альпийские горки" class="w-full h-48 object-cover rounded shadow" />
+            <p class="mt-2 font-semibold text-sm sm:text-base">5. Альпийские горки, рокарии, альпинарии</p>
+        </div>
+
+        <!-- Card 6 -->
+        <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="200">
+            <img src="./images/card6.svg" alt="Водоемы" class="w-full h-48 object-cover rounded shadow" />
+            <p class="mt-2 font-semibold text-sm sm:text-base">6. Устройство ручьёв, водоёмов, каскадов</p>
+        </div>
+
+        <!-- Card 7 -->
+        <div data-aos="zoom-in" data-aos-duration="700">
+            <img src="./images/card7.svg" alt="МАФ" class="w-full h-48 object-cover rounded shadow" />
+            <p class="mt-2 font-semibold text-sm sm:text-base">7. Строительство, маф</p>
+        </div>
+
+        <!-- Card 8 -->
+        <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+            <img src="./images/card8.svg" alt="Подпорные стенки" class="w-full h-48 object-cover rounded shadow" />
+            <p class="mt-2 font-semibold text-sm sm:text-base">8. Подпорные стенки</p>
+        </div>
+
+        <!-- Card 9 -->
+        <div data-aos="zoom-in" data-aos-duration="700" data-aos-delay="200">
+            <img src="./images/card9.svg" alt="Посадка растений" class="w-full h-48 object-cover rounded shadow" />
+            <p class="mt-2 font-semibold text-sm sm:text-base">9. Посадка растений</p>
+        </div>
+
+        </div>
+
+    </div>
+    </section>
+    <!-- 4-Cards section end -->
+
+    <!-- 5-Information section start -->
+     <section class="py-12 bg-white">
+  <div class="max-w-[1300px] mx-auto w-[90%]">
+    <!-- Sarlavha -->
+    <div class="text-center mb-10">
+      <img src="./images/Group 6.svg" class="mx-auto w-[300px] h-20 object-cover mb-4">
+      <h2 class="font-normal text-lg text-[#34642c]">ОТЗЫВЫ</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+      <!-- Fikr 1 -->
+      <div class="flex flex-col items-center " data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+        <div class="w-20 h-20 rounded-full bg-gray-200 mb-4"></div>
+        <h3 class="text-gray-800 font-semibold mb-2">Михаил</h3>
+        <p class="text-sm text-gray-700 text-justify">
+          К компании relief image обратился в конце 2019 года, и летом 2020 все работы были закончены. Мы с семьей живём в Псков. Партизанское озеро, хотели наш уютный и неровный участок превратить в уютный зелёный сад, с хорошим газоном, огородом и создать цветники у дома. Работой довольны, команда Надежды теперь занимается обслуживанием нашего участка.
+        </p>
+      </div>
+
+      <!-- Fikr 2 -->
+      <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+        <div class="w-20 h-20 rounded-full bg-gray-200 mb-4"></div>
+        <h3 class="text-gray-800 font-semibold mb-2">Наталья</h3>
+        <p class="text-sm text-gray-700 text-justify">
+          В 2016 году понадобились специалисты по уходу за садом. С командой Надежды наш сад зацвел новыми красками. В том же году мы купили дом в Ремино. Хотели создать уютный уголок с зоной отдыха. И уже тогда мы понимали, кому доверить воплощение наших желаний. Работой довольны, все проекты были учтены. По сегодняшний день мы доверяем наш сад только специалистам relief image.
+        </p>
+      </div>
+
+      <!-- Fikr 3 -->
+      <div class="flex flex-col items-center" data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
+        <div class="w-20 h-20 rounded-full bg-gray-200 mb-4"></div>
+        <h3 class="text-gray-800 font-semibold mb-2">Ольга</h3>
+        <p class="text-sm text-gray-700 text-justify">
+          Наш участок находился в Петергофе. К Надежде обратились в 2016 году. Была необходимость в уходе за садом, растения болели, а также, было много насекомых. Работой команды довольны. Вот уже 4 года доверяем наш сад специалистам!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- 5-Information section end -->
+
+    <!-- 6-Footer section start -->
+    <footer class="bg-[#5a554d] text-white relative overflow-hidden">
+    <div class="max-w-[1300px]  w-[90%] mx-auto px-4 pt-12 pb-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+        <div data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-lg font-semibold mb-4">Контакты</h3>
+        <div class="mb-2 flex items-center">
+            <span><img src="./images/telephone.svg" ></span>
+            <span class="ml-2">+7 (981) 98-50-04</span>
+        </div>
+        </div>
+        <div class="flex flex-col items-center justify-between" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="font-light text-sm text-white">Email</h3>
+        <div class="flex items-center">
+            <span>✉️</span>
+            <span class="ml-2">relief.image@mail.ru</span>
+        </div>
+        </div>
+
+        <!-- O‘ng: Manzil -->
+        <div class="flex  flex-col md:justify-between items-end" data-aos="fade-up" data-aos-delay="300">
+            <div class="flex space-x-6 text-yellow-300 text-xl mb-4">
+            <a href="#" class="hover:scale-110 transition"><img src="./images/instagram.svg"> </a>
+            <a href="#" class="hover:scale-110 transition"><img src="./images/watsapt.svg" ></a>
+            <a href="#" class="hover:scale-110 transition"><img src="./images/email.svg"> </a>
+        </div>
+        <br><br>
+        <div class="flex items-center">
+            <span><img src="./images/локация.svg"> </span>
+            <span class="ml-2">Санкт-Петербург и ЛО</span>
+        </div>
+        </div>
+    </div>
+
+    <!-- O‘simlik rasmi -->
+    <div class="mt-4">
+        <img src="./images/footer.svg" alt="Grass" class="w-full object-cover" />
+    </div>
+
+    <!-- Pastgi yozuv -->
+    <div class="text-center py-2 text-xs text-white">
+        Разработано Studio
+    </div>
+    </footer>
+    <!-- 6-Footer section start -->
+
+    <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
