@@ -1,0 +1,131 @@
+Java Script haqida umumiy tushuncha
+Java Script- Web uchun yuqori darajali dasturlash tili hisoblanadi. Uning yordamida HTML va CSS ni dinamik tarzda o’zgartirish mumkin. 
+Java Scriptni frontend, backend, mobile application hattoki gaming o’yinlar uchun ham qullash mumkin. Frontend -web sahifani dinamik ko’rinishda, matnni o’zgartirish, rasm olchamlarini uzgartirish mumkin. Undan tashqari JS freymorklari yordamida web sayt jarayonini ancha tez va oson amalga oshirish uchun yordam beradi. 
+Backend-JS ga asoslangan NodeJS texnologiyasi orqali backent ya’ni server side dasturlashni amalga oshirish mumkin.
+Mobile application development-ReactNative va shunga o’xshash texnologiyalar yordamida mobil ilovalar yaratish imkonini beradi.
+Gaming development-Online o’yinlar yaratishda Java Script texnologiyalaridan foydalanish mumkin. 
+Java Script  umumiy maqsadga yo’naltirilgan scripting til bo’lib , Ecmac Script tomonidan belgilangan 	spetsifikatsiyalarga javob beradi. Xulosa qilib aytganda Ecmac Script scripting til uchun reja, Java Script esa uni amalga ishorish uchun xizmat qiladi.
+1994-yilda NetSpace web brauzeri taqdim etilgan . U java Scriptni qo’llab quvvatlovchi 1-web brauzer hisoblanadi. 
+1995-yilda Internet explore ishlab chiqiladi. 
+1996-yilda Opera brauzeri ishga tushiriladi. 
+1997-yilda Ecmac Script taqdim etiladi keying yil esa uni versiyasi chiqadi. Shu bilan birga Mozilla brauzeri ham ishlab chiqiladi. 
+2000-2008-yillarda Ecmas scriptdan top versiyasi ishlab chiqiladi lekin muzokaralar natijasi u qo’llab quvvatlanmaydi. Lekin shu vaqtni o’ziga FireFox, Apple Safari, Chrome brauzerlari ishlab chiqiladi va HTML5  versiyasi ham ishlab chiqiladi. 
+2009-yilda NodeJS ishlab chiqiladi va endi Ecmac Scriptni brauzerdan tashqarida ham ishlatish imkoniyati paydo bo’ladi. Massivlar uchun metodlar qo’shiladi. 
+2013-yilda React JS ishlab chiqildi. Endi uning yordamida operatsion tizimlarga ham dastur yaratish imkoniyati paydo bo’ldi.
+JavaScript dasturlash tilini Brendan Eich ishlab chiqqan
+Java Scriptni 3 xil yo’l bilan ishlatamiz. 
+1.Brauzer consoleda
+2.Node JSda
+3.Script tagida
+Developer Console-Java Script kodini tezda ishga tushirish uchun foydalaniladi. 
+Java Script-asosan 2 xil ko’rinishda ulanadi.
+1.	<script> tagi orasida kerakli Java Script kodlari yozib ketiladi va web sahifa ochilganda ishga tushadi. 
+2.	<script> tagining src attribute yordamida tashqi JS fayl ulanadi. 
+alert-sahifa yangilangan ekranga chiqadigan ma’lumotni chiqarib beradi ya’ni xabar berish uchun ishlatiladi. 
+confirm-tasdiqlash uchun ishlatiladi. 
+Prompt-ma’lumot kiritish uchun ishlatiladi. 
+ 
+Qiymatlar-eng kichik ko’rinishdagi ma’lumot yoki ma’lumot bo’lagi. 
+O’zgaruvchilar (variables)- o’zgaruvchilarni qutiga o’xshatishimiz mumkin. Uning ichiga narsalarni solib, qutiga nom berib quyishimiz mumkin bo’ladi. Keyinchalik esa shu nom bilan bemalol izlab topishimiz mumkin . 
+Varda bitta uzgaruvchini qayta qayta bersh mumkin, lkn unda faqat oxirgi qiymatni qabul qila oladi. Letda esa bitta nom bilan faqat bitta o’zgaruvchini berish mumkin. 
+let ism = “ezoza”
+console.log(ism); ---- Shu ko’rinishda yozilsa brauzerning console qismida natija chiqadi, lkn uni teskari tartibda qilinsa unda Reference degan xatolikni chiqarib beradi. 
+O’zgaruvchilarga nom berish-o’zgaruvchilarga nom berayotganda, u o’zida qanday ma’lumot saqlashini hisobga olib , berilgan nom saqlayotgan ma’lumotni ifoda etib turishi kerak.Unda 1-chidan keyin kelaadigan so’z bosh harf bn yozilishi kerak. (camelCase) shunaqa ko’rinishda
+ASOSIY QOIDALAR!
+•	O’zgaruvchi nomida bo’sh nom ya’ni (scape ) bo’lishi mumkin emas. 
+•	O’zgaruvchi nomi harf, pastgi chiziqcha(_) yoki $(dollar) belgisi bilan boshlanishi shart. 
+•	Ma’lum bir zaxiralangan nomlarni o’zgaruvchiga berish ta’qiqlanadi.
+•	O’zgaruvchilar katta-kichik (case-sansitive) harflarni turli xil deb qabul qiladi. 
+PascalCase-Har bir so‘z bosh harf bilan boshlanadi. Odatda class nomlari va constructorlar uchun ishlatiladi.
+class UserAccount { }
+function MyFunction() { }
+Snace_case- So‘zlar kichik harflar bilan, ular orasida pastki chiziq _.Python va ba’zi boshqa tillarda keng qo‘llaniladi.
+let first_name = "Eʼzoza";
+Kebab-case-So’zlar kichik harflar bilan, ular orasida (-) Css class nomlari va fayl nomlarida keng tarqalagan.
+.main-container { }
+.text-center { }
+Ma’lumot turlari
+Java Scriptda ma’lumot turlari 2ga bo’linadi: Primitive va No-Primitive(object).
+Primitive-qiymat to’g’ridan to’g’ri o’zgaruvchi murojaat qiladigan manzilda joylashadi.
+Turlari
+•	Number-sonlarni o’zida saqlavchi ma’lumot turi
+let age = 32;    let price = 1.23
+•	String-o’zida belgilar ketma-ketligini saqlovchi ma’lumot turi
+let firstName = “ezoza”;
+•	Boolen-mantiqiy ma’lumot turibo’lib faqatgina rost va yolg’on qiymatlarni qaytaradi.
+let isUser = true;
+•	Underfined- hali aniqlanmagan ma’lumot turi.Ozgaruvchi bor, lekin qiymat berilmagan.
+let student;
+•	Null-bo’sh qiymatga ega ma’lumot turi.Ozgaruvchi bor, lkn qiymat bo’sh 
+Let school = “null”;
+•	Symbol-yagona (unique) va o’zgarmas qiymatga ega bo’luvchi ma’lumot turi.
+let id = Symbol (“id”);
+•	BigInt-katta sonlarni saqlashga mo’ljallangan ma’lumot turi.
+const alsoHuge = BigInt (12131313131);
+type of operatori- o’zgaruvchi saqlayotgan ma’lumot turini aniqlashga yordam beradi. ( let age =32; console.log(type of age))- bunda natija number kurinishida chiqadi.
+No-Primitive-qiymat o’zgaruvchi murojaat qilgan manzilda ko’rsatilgan boshqa manzilda saqlanadi. (Object, Array, Function)
+O’zgaruvchilarni e’lon qilish- Java Script dasturlash tilida o’zgaruvchilarni 3 xil usulda e’lon qilish imkoniyati mavjud . Ular var, let, const. 
+let- dasturimiz ishlashi davomida o’zgarishi mumkin bo’lgan bo’lgan o’zgaruvchilarni e’lon qilish uchun ishlatiladi. 
+! E’lon qilinib bo’lingan o’zgaruvchini qiymatini o’zgartirishda hech qaanday kalit so’zidan foydalanilmaydi. 
+Const-dasturimiz ishlashi davomida o’zgarmaydigan o’zgaruvchilarni e’lon qilish uchun ishlatiladi. 
+const id = “AA”
+id = “Ab” bunda xatolik chiqarib beradi. 
+! const yordamida e’lon qilingan o’zgaruvchilar har doim boshlang’ich qiymayga ega bo’lishi shart
+Var -let bilan bir xil vazifani e’lon qilish uchun ishlatiladigan maxsus kalit so’z hisoblanadi. Ular o’xshash bo’lishiga qaramasdan ularning ma’lum farqlari ham borligini ko’rish mumkin. Var yordamida qilingan o’zgaruvchi (scope ) funksiya darajasida bo’lsa u esa aksincha (block ) ko’rinishida bo’ladi. 
+Java Script-yordamida hech qanday kalit so’zlarsz ham o’zgaruvchi yaratish imkoniyati mavjud. Lekin u usul tavsiya etilmaydi. 
+Strict mode- yozayotgan kodimizga xatolardan qochish mumkin. (use “strict”) buni eng tepada yozib quyosh tavsiya etiladi. 
+Asosiy operatorlar:
+Operatorlar-bir nechta operantlar ustiga amal bajaradi.
+•	Arifmetik operatorlar-(qo’shish(+), ayirish (-), ko’paytirish(*), bo’lish (/), ikki operatordan qoldiqni qaytarish (%), operator qiymatini 1taga oshirish (++), 1taga kamaytirish (--)).
+•	Solishtirish (comparison)-bunda 2ta operatorni solishtirish imkoniyati mavjud. Bunday operatorlar true va folse qiymatini qaytaradi. (operator tengligi uchun (= =), turi va qiymatini solishtirish uchun (= = =), notenglik uchun (! =), <, > , <=, > = kabi qiymatlarni oladi.)
+•	Tayinlash (assignment)-o’zgaruvchilarga qisqartma ko’rinishida yangi qiymatlar tayinlash imkoniyatini beradi. 
+String-belgilar ketma-ketligidan tashkil topgan ma’lumot turi. Ularni bittalik ( ‘ ‘) ikkitalik (“ “) qo’shtirnoqlardan foydalanish mumkin. 
+Birlashtirish (concatenation)-qo’shish operatoridan foydalangan holda, stringlari qushish mumkin. 
+Boolen logic-(mantiq)-bu asosan True va Folse qiymatlarini o’z ichiga oladi. U 3 ta operatordan iborat. Ular: AND, OR, NOT
+AND(&&)-barcha qiymatlat True bo’lsa natija True chiqadi, aks holda Folseni taqdim etdadi.
+OR (||)-agar hech bo’lmasa bir qiymat Truedan tashkil topgan bo’lsa natija True bo’ladi , aks holda Folse chiqariladi. 
+NOT (!)-berilgan qiymat True bo’lsa Folse chiqaradi, Folse bo’lsa True chiqadi oddiy qilib aytganda berilgan qiymatni teskarini taqdim etadi.
+Type conversion-Java Script dasturlash turida saqlanayotgan ma’lumot turini bir ko’rinishdan 2-ko’rinishga o’tqazish.
+Number-Primitiv o’rab turuvchi obyektidan foydalanib, berilgan ma’lumot turini son ko’rinishga o’tqazish imkoniyati mavjud. Agar berilgan ma’lumotni son ko’rinishida o’tqazishni imkoni bo’lmasa, NaN maxsus qiymati yuzaga keladi. 
+String-Primitiv o’rab turuvchi obyektidan foydalanib, berilgan ma’lumot turini string ko’rinishiga o’tqazish mumkin.
+Type coercion-Java Script dasturlash tilida operatorlar turli qiymatlar ustida ish olib borayotganda, ulardan birining avtomatik ravishda boshqa turga o’tishi. Boshqacha qilib aytganda ma’lumot turini avtomatik ravishda 1 ko’rinishdan 2-ko’rinishga o’tishi. 
+Java Script dasturlash tilida berilgan qiymatni Boolen ko’rinishida o’tqazilganda, ular Truthy va Falsy ko’rinishga keladi. Truthy faqat rost qiymatlarni Folse esa folse qiymatlarni eknranga chiqaradi.
+Falsy ko’rinishga keladigan qiymatlar:
+1.false                  5.undifaned
+2.0                       6.null
+3.0n(BigInt)        7.NaN
+4.””
+Funksiya-Java Script dasturlash tilining asoslaridan biri bo’lib uning yordamida ma’lum bir vazifani bajarish imkoniyati mavjud. Funksiya boshqa bir kod qismda chaqirilganda ishga tushadi. Funksiya yordamida kodni qayta ishlatish imkoniyati mavjud. Ya’ni bir marta e’lon qilib bir nechta joyga ishlatish mumkin. 
+function meningFunksiyam (son1, son2){
+return son1+son2;
+}
+console.log(meningFunksiyam (10, 20));
+)
+Funksiyalar 3 xil yo’l bilan e’lon qilinadi. 
+•	Function Declaration (oddiy e’lon qilish)-function kalit so’zi yordamida e’lon qilinadi va berilgan 
+function salomBer() {
+  console.log("Salom, dunyo!");
+}
+salomBer(); // chaqirish
+Afzalligi: bu usulda yozilgan funksiyani e’lonidan oldin ham chaqirish mumkin.
+•	Function Expression (o‘zgaruvchiga biriktirish)-function kalit so’zi yordamida e’lon qilinadi va ma’lum bir o’zgaruvchiga tenglab quyish irqali e’lon qilinadi. 
+const salomBer = function() {
+  console.log("Salom, dunyo!");
+};
+salomBer();
+Afzalligi: funksiya o‘zgaruvchi sifatida ishlaydi.
+Lekin bu usulda faqat e’lonidan keyin chaqirish mumkin.
+•	Arrow Function (zamonaviy usul)-function expression yozishning qisqaroq ko’rinishi. Bunday turdagi funksiyalarni yozishni turli xil yo’llari mavjud. 
+const salomBer = () => {
+  console.log("Salom, dunyo!");
+};
+salomBer();
+Afzalligi: qisqa va o‘qilishi oson.
+Lekin this so‘zini ishlatishda ehtiyot bo‘lish kerak (oddiy function bilan farqi bor).
+Array-bir vaqtning o’zida bir nechta qiymatlarni o’zida saqlashi mumkin bo’lgan obyekt.
+Array yaratish 2xil usulda amalga oshiriladi. 
+1.Array literal ko’rinishda-array yaratishning eng oson usuli array literal hisoblanib, to’rtburchak qavslar ([]) dan foydalanib yaratiladi. 
+2.New kalit so’zi yordamida-new kalit so’zi yordamida ham arraylarni yaratish imkoniyati mavjud. 
+
+
+
